@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2.inside-wpis {
+    
+    font: 21px poppins,sans-serif;
+    font-weight: 600;
+    padding: 30px;
+}
+
+.center-wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /*pozwala na wymiary, nie w inline*/
+    
+    border: 7px solid #333;
+    height: 50px;
+    width: 50px;
+    border-radius: 65px;
+    -moz-border-radius: 65px;
+    -webkit-border-radius: 65px;
+    margin:0 auto;
+}
+
+.logo:after {
+    content: '';
+    display: inline-block;
+    margin-top: 22px;
+    margin-left: -16px;
+    width: 78px;
+    height: 14px;
+    border-top: 8px solid #fff;
+    -moz-transform: rotate(56deg);
+    -webkit-transform: rotate(56deg);
+    transform: rotate(46deg);
+}
+
+header {
+    width: 100%;
+    
+}
+
+.main-nav {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+nav a {
+    font-family: fira mono;
+    text-transform:uppercase;
+    font-size: 13px;
+    color: rgb(26, 25, 25);
+}
+
+.main-menu li {
+    float: left;
+    list-style: none;
+    margin-right: 15px;
+    text-decoration:none;
+
+}
+
+.main-menu {
+    display: inline-block;
+}
+
+.main-menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #383535;
+    margin-left:10px;
+}
+
+.hero-spotlight {
+    min-height: 350px;
+    
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 60px;
+}
+
+.spotlight-image {
+    background: url(img/alb.jpg) no-repeat;
+    background-size: cover;
+    height: 450px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h2.spotlight {
+    text-align: center;
+    font: 78px 'poppins', sans-serif;
+    font-weight: 600;
+    line-height: 80px;
+}
+
+section.content-grid {
+    width: 960px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+article.wpis {
+    width: 320px;
+    height: 400px;
+    display:inline-block;  
+
+}
+.pierwszy {
+    background: url(img/wolves.jpg) 50% no-repeat;
+    background-size: cover;
+    height: 400px;
+    
+}
+
+.drugi {
+    background: url(img/2.jpg) 50% no-repeat;
+    background-size: cover;
+    height: 400px;
+
+}
+
+.trzeci {
+    background: url(img/switch.jpg) 50% no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.czwarty {
+    background: url(img/beats_2.jpg) 50% no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.piaty {
+    background: url(img/5ch.jpg) 50% no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.szosty {
+    background: url(img/carlsbb.jpg) 50% no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.siodmy {
+    background: url(img/messi-adidas.jpg) 50% no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.osmy {
+    background: url(img/pl.jpg) 50% no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.dziew {
+    background: url(img/gunners3.jpg) 50% no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.overlay {
+    width: 320px;
+    height: 400px;
+    opacity: 0.9;
+    background: #7AC4C9;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+
+}
+
+article.wpis:hover .overlay {
+    display: block;
+}
+
+
+
+@media (max-width: 760px){
+    section.content-grid {
+        flex-direction: column;
+        width:320px;
+
+}
+} 
+
+footer {
+    width: 960px;
+    height:140px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.foot {
+    float:right;
+    padding-top:70px;
+}
+.foot p {
+    font: 12px 'work sans', sans-serif;
+}
