@@ -1,118 +1,45 @@
 <!DOCTYPE html>
-<html lang="pl">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Mockup CreativeFootball</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="style.css">
-  <link href='https://fonts.googleapis.com/css?family=Poppins:600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Fira+Mono:400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Work+Sans:400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,800,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
 
 </head>
-
 <body>
+    <div class="loader1" data-text="loaderloader"></div>
+    <div id="container">
 
-<header>
-    <div class="center-wrapper">
-    <a href="#" class="logo"></a>
-<nav class="main-nav">
-    <ul class="main-menu">
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Kontakt</a></li>
-    </ul>
-</nav>
-</div>
-</header>
-<section class="hero-spotlight">
-    <h2 class="spotlight">  alberto's story  </h2> <!---lub a href z class spotlight-->
-    <div class="spotlight-image"></div>
-</section>
-
-<section class="content-grid">
-    <article class="wpis">
-            <div class="overlay"><h2 class="inside-wpis">Tytuł</h2></div>
-        <a href><div class="pierwszy">
-            
-        </div></a> <!---znacznik blokowy można umieścić w liniowym html 5-->
+        <div class="sign"><H1>Heeeej Oktawia ;-)</H1></div>
+        <button id="submit">zmień kolor</button>
+    </div>
     
-    </article>
-
-    <article class="wpis">
-            <div class="overlay"><h2 class="inside-wpis">Tytuł</h2></div>
-        <a href><div class="drugi">
-            
-        </div></a> 
     
-    </article>
-
-    <article class="wpis">
-            <div class="overlay"><h2 class="inside-wpis">Tytuł</h2></div>
-        <a href><div class="trzeci">
-            
-        </div></a> 
-    </article>
-
-    <article class="wpis">
-            <div class="overlay"><h2 class="inside-wpis">Tytuł</h2></div>
-        <a href><div class="czwarty">
-            
-        </div></a> 
-    
-    </article>
-    <article class="wpis">
-            <div class="overlay"><h2 class="inside-wpis">Tytuł</h2></div>
-        <a href><div class="piaty">
-            
-        </div></a> 
-    
-    </article>
-    <article class="wpis">
-            <div class="overlay"><h2 class="inside-wpis">Tytuł</h2></div>
-        <a href><div class="szosty">
-            
-        </div></a> 
-    
-    </article>
-    <article class="wpis">
-            <div class="overlay"><h2 class="inside-wpis">Tytuł</h2></div>
-        <a href><div class="siodmy">
-            
-        </div></a> 
-    
-    </article>
-    <article class="wpis">
-            <div class="overlay"><h2 class="inside-wpis">Tytuł</h2></div>
-        <a href><div class="osmy">
-            
-        </div></a> 
-    
-    </article>
-    <article class="wpis">
-            <div class="overlay"><h2 class="inside-wpis">Tytuł</h2></div>
-        <a href><div class="dziew">
-            
-        </div></a> 
-    
-    </article>
-</section>
-
-
-<footer>
-        
-        <div class="foot"><p>mockup <a href="#"></div>
-        </a>.</p>
-      </footer>
-
-  <script src="js/main.js"></script>
-
+    </div>
+    <div class="loader" data-text="loaderloader">
   
+        <script>
 
+            function start() {
+                var submit = document.getElementById("submit");
+                submit.addEventListener("click", toggle);
+              };
+              
+              function toggle() {
+                var color = document.getElementById("container");
+                color.classList.toggle("black");
+              };
+              
+              
+              start();
+              
+              </script>
 </body>
 
 </html>
