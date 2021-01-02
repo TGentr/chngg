@@ -17,6 +17,12 @@ body {
     }
   }
 
+@media only screen and (max-width: 320px) {
+    #container {
+      width:64%;
+    }
+  }
+
 .sign {
     margin: 58px;
     border: 1vw solid black;
