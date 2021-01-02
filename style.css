@@ -1,22 +1,18 @@
 
   
 
-
-
 #container {
     background: #9582e6;
     border: 64px #ffffff solid;
-    height: 800vh;
+    height: 62vh;
     width: 76%;
     margin: 0 auto;
     
 }
-
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 600px) {
     #container {
       width:68%;
     }
-  }
 
 .sign {
     margin: 58px;
