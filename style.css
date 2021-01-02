@@ -1,7 +1,7 @@
-body {
 
-    
-}
+  
+
+
 
 #container {
     background: #9582e6;
@@ -11,15 +11,17 @@ body {
     margin: 0 auto;
     
 }
-
-
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 600px) {
     #container {
-      width:64%;
+      width:68%;
     }
   }
 
-
+  @media only screen and (max-width: 300px) {
+    #container {
+      width:68%;
+    }
+  }
 
 .sign {
     margin: 58px;
@@ -48,7 +50,7 @@ body {
   }
   .loader {
     width: 140px;
-    height: 21px;
+    height: 20px;
     overflow: hidden;
     background: #fff;
     margin: 0 auto;
@@ -68,7 +70,7 @@ body {
   }
   .loader1 {
     width: 140px;
-    height: 21px;
+    height: 20px;
     overflow: hidden;
     background: #fff;
     margin: 0 auto;
@@ -116,6 +118,8 @@ body {
     cursor: pointer;
     transform: rotate(90deg);
     /* transform-origin: center; */
-    display: \; float: r;
+    
     padding: 0% 2% 3% 3%;
   }
+
+  
