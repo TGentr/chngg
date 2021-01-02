@@ -11,9 +11,16 @@ body {
     margin: 0 auto;
     
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 600px) {
+
     #container {
       width:68%;
+    }
+  }
+
+@media only screen and (max-width: 320px) {
+    #container {
+      width:64%;
     }
   }
 
