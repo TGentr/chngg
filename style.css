@@ -1,229 +1,112 @@
 body {
+
+    
+}
+
+#container {
+    background: #9582e6;
+    border: 64px #ffffff solid;
+    height: 62vh;
+    width: 76%;
+    margin: 0 auto;
+    
+}
+
+.sign {
+    margin: 58px;
+    border: 1vw solid black;
+    width: 61%;
+    transform: translateX(-19%);
+}
+
+.sign h1 {
+    font-family: 'Montserrat';
+    font-size: 6vw;
+    padding: 3% 3% 4% 5%;
+    line-height: 6vw;
+    margin: 1%;
+}
+body {
     margin: 0;
-    box-sizing: border-box;
-}
-
-main {
-    display: block;
-}
-
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-}
-
-h2.inside-wpis {
+    padding: 0;
     
-    font: 21px poppins,sans-serif;
-    font-weight: 600;
-    padding: 30px;
-}
-
-.center-wrapper {
-    width: 100%;
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.logo {
-    margin-left: auto;
-    margin-right: auto;
-    display: block; /*pozwala na wymiary, nie w inline*/
+    justify-content: center;
+    align-items: center;
     
-    border: 7px solid #333;
-    height: 50px;
-    width: 50px;
-    border-radius: 65px;
-    -moz-border-radius: 65px;
-    -webkit-border-radius: 65px;
-    margin:0 auto;
-}
-
-.logo:after {
-    content: '';
-    display: inline-block;
-    margin-top: 22px;
-    margin-left: -16px;
-    width: 78px;
-    height: 14px;
-    border-top: 8px solid #fff;
-    -moz-transform: rotate(56deg);
-    -webkit-transform: rotate(56deg);
-    transform: rotate(46deg);
-}
-
-header {
-    width: 100%;
-    
-}
-
-.main-nav {
+  }
+  .black {
+      background-color: pink !important;
+  }
+  .loader {
+    width: 140px;
+    height: 20px;
+    overflow: hidden;
+    background: #fff;
     margin: 0 auto;
-    text-align: center;
-    padding-top: 30px;
-}
-
-nav a {
-    font-family: fira mono;
-    text-transform:uppercase;
-    font-size: 13px;
-    color: rgb(26, 25, 25);
-}
-
-.main-menu li {
-    float: left;
-    list-style: none;
-    margin-right: 15px;
-    text-decoration:none;
-
-}
-
-.main-menu {
-    display: inline-block;
-}
-
-.main-menu li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #383535;
-    margin-left:10px;
-}
-
-.hero-spotlight {
-    min-height: 350px;
     
+  }
+  .loader:before {
+    content: attr(data-text);
     position: relative;
+    top: -58px;
+    color: #fff;
+    width: calc(100% + 27px);
+    font-size: 4em;
+    text-decoration-style: wavy;
+    text-decoration-color: black;
+    text-decoration-line: underline;
+    animation: animate .7s linear infinite;
+  }
+  .loader1 {
+    width: 140px;
+    height: 20px;
+    overflow: hidden;
+    background: #fff;
     margin: 0 auto;
-    display: block;
-    margin-bottom: 60px;
-}
-
-.spotlight-image {
-    background: url(img/alb.jpg) no-repeat;
-    background-size: cover;
-    height: 450px;
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-h2.spotlight {
-    text-align: center;
-    font: 78px 'poppins', sans-serif;
-    font-weight: 600;
-    line-height: 80px;
-}
-
-section.content-grid {
-    width: 960px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-article.wpis {
-    width: 320px;
-    height: 400px;
-    display:inline-block;  
-
-}
-.pierwszy {
-    background: url(img/wolves.jpg) 50% no-repeat;
-    background-size: cover;
-    height: 400px;
+    margin-top: 3%;
     
-}
+  }
+  .loader1:before {
+    content: attr(data-text);
+    position: relative;
+    top: -58px;
+    color: #fff;
+    width: calc(100% + 27px);
+    font-size: 4em;
+    text-decoration-style: wavy;
+    text-decoration-color: black;
+    text-decoration-line: underline;
+    animation: animate .7s linear infinite;
+  }
+  @keyframes animate {
+    0% {
+      left: -3px;
+    }
+    100% {
+      left: -30px;
+    }
+  }
 
-.drugi {
-    background: url(img/2.jpg) 50% no-repeat;
-    background-size: cover;
-    height: 400px;
-
-}
-
-.trzeci {
-    background: url(img/switch.jpg) 50% no-repeat;
-    background-size: cover;
-    height: 400px;
-}
-
-.czwarty {
-    background: url(img/beats_2.jpg) 50% no-repeat;
-    background-size: cover;
-    height: 400px;
-}
-
-.piaty {
-    background: url(img/5ch.jpg) 50% no-repeat;
-    background-size: cover;
-    height: 400px;
-}
-
-.szosty {
-    background: url(img/carlsbb.jpg) 50% no-repeat;
-    background-size: cover;
-    height: 400px;
-}
-
-.siodmy {
-    background: url(img/messi-adidas.jpg) 50% no-repeat;
-    background-size: cover;
-    height: 400px;
-}
-
-.osmy {
-    background: url(img/pl.jpg) 50% no-repeat;
-    background-size: cover;
-    height: 400px;
-}
-
-.dziew {
-    background: url(img/gunners3.jpg) 50% no-repeat;
-    background-size: cover;
-    height: 400px;
-}
-
-.overlay {
-    width: 320px;
-    height: 400px;
-    opacity: 0.9;
-    background: #7AC4C9;
-    position: absolute;
+  #submit {
+    z-index: 99;
+    position: fixed;
+    right: 1%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #111;
+    width: 29%;
+    height: 40px;
+    /* margin: 2%; */
+    border: none;
+    outline: none;
+    float: right;
+    background: no-repeat;
+    font: 15px 'poppins';
+    font-weight: 600;
     cursor: pointer;
-    z-index: 1;
-    display: none;
-
-}
-
-article.wpis:hover .overlay {
-    display: block;
-}
-
-
-
-@media (max-width: 760px){
-    section.content-grid {
-        flex-direction: column;
-        width:320px;
-
-}
-} 
-
-footer {
-    width: 960px;
-    height:140px;
-    margin: 0 auto;
-    text-align: justify;
-}
-
-.foot {
-    float:right;
-    padding-top:70px;
-}
-.foot p {
-    font: 12px 'work sans', sans-serif;
-}
+    transform: rotate(90deg);
+    /* transform-origin: center; */
+    display: \; float: r;
+    padding: 0% 2% 3% 3%;
+  }
