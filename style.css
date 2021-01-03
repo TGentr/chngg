@@ -1,31 +1,59 @@
 
   
 
+
+
 #container {
     background: #9582e6;
-    border: 64px #ffffff solid;
+    position: relative;
     height: 62vh;
     width: 76%;
     margin: 0 auto;
+    -webkit-box-shadow: 7px 11px 32px -6px rgb(0 0 0 / 38%); 
+box-shadow: 7px 11px 32px -6px rgb(0 0 0 / 38%);
     
 }
 @media only screen and (max-width: 600px) {
     #container {
       width:68%;
     }
-}
+    #submit {
+        font-size: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 300px) {
+    #container {
+      width:68%;
+    }
+    #submit {
+        font-size: 10px;
+    }
+  }
+
 .sign {
     margin: 58px;
     border: 1vw solid black;
     width: 61%;
+    position: relative;
+    top: 3vw;
+    left: 0vw;
     transform: translateX(-19%);
+    transition: all 0.5s;
+  transition-timing: ease-in-out;
+}
+.sign:hover {
+	-webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    transition: all 0.5s;
+  transition-timing: ease-in-out;
 }
 
 .sign h1 {
     font-family: 'Montserrat';
     font-size: 6vw;
     padding: 3% 3% 4% 5%;
-    line-height: 6vw;
+    line-height: 6.2vw;
     margin: 1%;
 }
 body {
@@ -43,8 +71,10 @@ body {
     width: 140px;
     height: 20px;
     overflow: hidden;
-    background: #fff;
+    
     margin: 0 auto;
+    margin-top: 3%;
+    margin-bottom: 2%;
     
   }
   .loader:before {
@@ -63,9 +93,10 @@ body {
     width: 140px;
     height: 20px;
     overflow: hidden;
-    background: #fff;
+    
     margin: 0 auto;
     margin-top: 3%;
+    margin-bottom: 2%;
     
   }
   .loader1:before {
@@ -90,14 +121,14 @@ body {
   }
 
   #submit {
-    z-index: 99;
-    position: fixed;
-    right: 1%;
-    display: flex;
-    align-items: center;
+    z-index: 99; */
+    /* position: fixed; */
+    /* right: 1%; */
+    /* display: flex; */
+    /* align-items: center; */
     height: 100%;
-    color: #111;
-    width: 29%;
+    /* color: #111; */
+    /* width: 12%; */
     height: 40px;
     /* margin: 2%; */
     border: none;
@@ -108,9 +139,10 @@ body {
     font-weight: 600;
     cursor: pointer;
     transform: rotate(90deg);
-    /* transform-origin: center; */
+    position: absolute;
+    right: -11px;
+    bottom: 12%;
     
-    padding: 0% 2% 3% 3%;
   }
 
   
