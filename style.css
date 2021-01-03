@@ -13,21 +13,30 @@
 box-shadow: 7px 11px 32px -6px rgb(0 0 0 / 38%);
     
 }
-@media only screen and (max-width: 600px) {
-    #container {
-      width:68%;
-    }
-    #submit {
-        font-size: 10px;
-    }
-  }
 
-  @media only screen and (max-width: 300px) {
+
+  @media only screen and (max-width: 600px) {
     #container {
       width:68%;
+      
+
     }
     #submit {
-        font-size: 10px;
+        font-size: 10px !important;
+        transform: rotate(90deg) !important;
+
+    }
+
+    .sign {
+        margin-top: 10px !important;
+    }
+
+    .loader {
+        display: none !important;
+    }
+    .loader1 {
+        margin-top: 5vw !important;
+    margin-bottom: 5vw !important;
     }
   }
 
@@ -37,16 +46,17 @@ box-shadow: 7px 11px 32px -6px rgb(0 0 0 / 38%);
     width: 61%;
     position: relative;
     top: 3vw;
-    left: 0vw;
+    
     transform: translateX(-19%);
     transition: all 0.5s;
   transition-timing: ease-in-out;
 }
 .sign:hover {
-	-webkit-transform: translateY(0px);
-    transform: translateY(0px);
+	-webkit-transform: translateX(0);
+    transform: translateX(0px);
     transition: all 0.5s;
   transition-timing: ease-in-out;
+  
 }
 
 .sign h1 {
@@ -135,7 +145,7 @@ body {
     outline: none;
     float: right;
     background: no-repeat;
-    font: 15px 'poppins';
+    font: 14px 'poppins';
     font-weight: 600;
     cursor: pointer;
     transform: rotate(90deg);
