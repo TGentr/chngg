@@ -59,6 +59,16 @@ box-shadow: 7px 11px 32px -6px rgb(0 0 0 / 38%);
   
 }
 
+.sign:hover span {
+    display:none;
+}
+.sign h1:hover:after, span {
+    font-family: 'Montserrat';
+    font-size: 6vw;
+    line-height: 6.2vw;
+    content:"D";
+}
+
 .sign h1 {
     font-family: 'Montserrat';
     font-size: 6vw;
